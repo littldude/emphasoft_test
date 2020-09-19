@@ -10,6 +10,40 @@
 <body>
     <header class="header">
         <div class="header__inner">
+
+            <!-- MOBILE -->
+            <div class="mob__header">
+                <button class="mob__burger">
+                    <svg class="mob__burger--img">
+                        <use href="sprite.svg#menu"></use>
+                    </svg>
+                </button> 
+                <!-- /.button--burger -->
+                <a class="mob__logo" href="#">
+                    <img src="img/logo.png" alt="Webim logo">
+                </a>
+                <!-- /.mob__logo -->
+            </div>
+            <!-- /.mob__header -->
+            
+            <nav class="mob__nav">
+                <a class="mob__nav--link" href="#">Вход</a>
+                <!-- /.mob__nav--link -->
+                <a class="mob__nav--link" href="#">Регистрация</a>
+                <!-- /.mob__nav--link -->
+                <a class="mob__nav--link" href="#">Возможности</a>
+                <!-- /.mob__nav--link -->
+                <a class="mob__nav--link" href="#">Тарифы</a>
+                <!-- /.mob__nav--link -->
+                <a class="mob__nav--link" href="#">Партнёрам</a>
+                <!-- /.mob__nav--link -->
+                <a class="mob__nav--link" href="#">Помощь</a>
+                <!-- /.mob__nav--link -->
+            </nav>
+            <!-- /.mob__nav -->
+
+            <!-- /MOBILE -->
+
             <nav class="header__nav">
                 <div class="header__nav--login">
                     <a class="header__nav--link" href="#">Вход</a>
@@ -166,7 +200,8 @@
 
     <section class="section section--white">
         <div class="container">
-            <h2 class="title">Установка приложения для операторов Webim Dashboard</h2>
+            <div class="section__inner">
+                <h2 class="title">Установка приложения для операторов Webim Dashboard</h2>
             <!-- /.title -->
             <div class="subtitle">Чтобы быть на связи с клиентами всегда, установите приложение Webim Dashboard </div> 
             <!-- /.subtitle -->
@@ -224,6 +259,8 @@
                 <!-- /.section__list--item -->
             </ul>
             <!-- /.section__list -->
+            </div>
+            <!-- /.section__inner -->
         </div>
         <!-- /.container -->
     </section>
@@ -422,7 +459,7 @@
                     <a class="footer__logo" href="#">
                         <img src="img/logo__footer.png" alt="Webim logo">
                     </a>
-                    <span>Webim 2008-2017</span>
+                    <span> &copy; Webim 2008-2017</span>
                     <span>Все права защищены</span>
                 </div>
                 <!-- /.footer__item--logo -->
@@ -494,5 +531,14 @@
         <!-- /.footer__inner -->
     </footer>
     <!-- /.footer -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $('.mob__burger').click(function() {
+                $('.mob__nav--link').slideToggle(300);
+            });
+        });
+    </script>
 </body>
 </html>
