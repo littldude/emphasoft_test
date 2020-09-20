@@ -193,7 +193,6 @@ button {
                     line-height: 24px;
                 }
             }
-            
             &__img {
                 display: block;
                 position: relative;
@@ -457,6 +456,48 @@ button {
     }
 }
 
+// ANIMATION
+@keyframes beat{
+    0% {
+        display: none;
+    }
+    50% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section {
+    &:hover .img {
+        &__first {
+            animation: beat 2s ease;
+            animation-delay: 0;  
+        }
+        &__second {
+            animation: beat 2s ease;
+            animation-delay: 1s;
+        }
+        &__third {
+            animation: beat 2s ease;
+            animation-delay: 2s;
+        }
+        &__fourth {
+            animation: beat 2s ease;
+            animation-delay: 3s;
+        }
+        &__fifth {
+            animation: beat 2s ease;
+            animation-delay: 4s;
+        }
+        &__sixth {
+            animation: beat 2s ease;
+            animation-delay: 5s;
+        }
+    }
+}
+// ADAPTIVE
 
 @media (max-width: 1112px) {
     .header {
@@ -528,6 +569,28 @@ button {
                 &--link {
                     display: none;
                 }
+            }
+        }
+    }
+    .section {
+        &:hover .img {
+            &__first {
+                animation: none;
+            }
+            &__second {
+                animation: none;
+            }
+            &__third {
+                animation: none;
+            }
+            &__fourth {
+                animation: none;
+            }
+            &__fifth {
+                animation: none;
+            }
+            &__sixth {
+                animation: none;
             }
         }
     }

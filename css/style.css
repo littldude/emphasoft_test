@@ -1,4 +1,3 @@
-
 *,
 ::before,
 ::after {
@@ -528,6 +527,70 @@ button {
   margin-right: 10px;
 }
 
+@-webkit-keyframes beat {
+  0% {
+    display: none;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes beat {
+  0% {
+    display: none;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.section:hover .img__first {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+.section:hover .img__second {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.section:hover .img__third {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.section:hover .img__fourth {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.section:hover .img__fifth {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.section:hover .img__sixth {
+  -webkit-animation: beat 2s ease;
+          animation: beat 2s ease;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
 @media (max-width: 1112px) {
   .header__nav--link {
     font-size: 16px;
@@ -599,6 +662,31 @@ button {
   }
   .header .mob__nav--link {
     display: none;
+  }
+
+  .section:hover .img__first {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section:hover .img__second {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section:hover .img__third {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section:hover .img__fourth {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section:hover .img__fifth {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .section:hover .img__sixth {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 @media (max-width: 834px) {
