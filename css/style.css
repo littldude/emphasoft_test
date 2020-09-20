@@ -1,3 +1,4 @@
+
 *,
 ::before,
 ::after {
@@ -28,6 +29,7 @@ ul, li {
 
 button {
   padding: 0;
+  outline: none;
 }
 
 .container {
@@ -221,6 +223,12 @@ button {
   text-decoration: underline;
   letter-spacing: 0.4px;
 }
+.section__steps--item__text:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
 .section .button {
   width: 256px;
   height: 48px;
@@ -273,12 +281,19 @@ button {
   border-radius: 100%;
 }
 .section__list--item__title {
+  display: block;
   margin-bottom: 20px;
   color: #0da088;
   font-size: 24px;
   font-weight: 400;
   text-decoration: underline;
   letter-spacing: 0.4px;
+}
+.section__list--item__title:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 .section__list--item__subtitle {
   max-width: 770px;
@@ -705,12 +720,18 @@ button {
     font-size: 20px;
   }
   .section__steps {
-    padding: 0 20px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .section__steps--item__text {
-    width: auto;
-    font-size: 20px;
+    display: block;
+    width: 100px;
+    font-size: 18px;
   }
   .section__list--item__title {
     font-size: 20px;

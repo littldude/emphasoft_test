@@ -34,6 +34,7 @@ ul, li {
 
 button {
     padding: 0;
+    outline: none;
 }
 
 .container {
@@ -210,6 +211,10 @@ button {
                 // border-bottom: 1px $color_link solid;
                 text-decoration: underline;
                 letter-spacing: 0.4px;
+                &:hover {
+                    opacity: .5;
+                    transition: .2s linear;
+                }
             }
         }
     }
@@ -258,12 +263,17 @@ button {
                 border-radius: 100%;
             }
             &__title {
+                display: block;
                 margin-bottom: 20px;
                 color: $color_link;
                 font-size: 24px;
                 font-weight: 400;
                 text-decoration: underline;
                 letter-spacing: 0.4px;
+                &:hover {
+                    opacity: .5;
+                    transition: .2s linear;
+                }
             }
             &__subtitle {
                 max-width: 770px;
@@ -650,12 +660,14 @@ button {
             font-size: 20px;
         }
         &__steps {
-            padding: 0 20px;
             width: 100%;
+            display: flex;
+            align-items: flex-start;
             &--item {
                 &__text {
-                    width: auto;
-                    font-size: 20px;
+                    display: block;
+                    width: 100px;
+                    font-size: 18px;
                 }
             }
         }
