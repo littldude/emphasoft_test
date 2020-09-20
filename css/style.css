@@ -274,6 +274,10 @@ button {
   width: 74px;
   height: 74px;
 }
+.section__list--line__img svg {
+  width: 74px;
+  height: 74px;
+}
 .section__list--line__step {
   margin-left: 37px;
   color: #393e6b;
@@ -301,6 +305,10 @@ button {
 }
 .section__linkbox .item__line--img {
   display: block;
+  width: 40px;
+  height: 40px;
+}
+.section__linkbox .item__line--img svg {
   width: 40px;
   height: 40px;
 }
@@ -491,20 +499,23 @@ button {
 }
 @media (max-width: 768px) {
   .section .title {
-    font-size: 48px;
+    width: auto;
+    font-size: 40px;
   }
   .section .title--big {
     margin: 0;
   }
   .section .subtitle {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 36px;
   }
   .section__text {
+    width: auto;
     font-size: 24px;
     line-height: 36px;
   }
   .section__text--small {
+    width: auto;
     font-size: 24px;
     letter-spacing: 0.6px;
   }
@@ -530,19 +541,20 @@ button {
   }
   .section__steps {
     width: 90%;
+    padding: 0 50px;
+  }
+  .section__steps--item__text {
+    width: 140px;
+    font-size: 26px;
   }
   .section__list--item__title {
-    font-size: 30px;
+    font-size: 26px;
   }
   .section__list--item__subtitle {
-    font-size: 24px;
+    font-size: 19px;
   }
   .section__list--line__step {
     font-size: 24px;
-  }
-  .section__list--line__img {
-    width: 102px;
-    height: 104px;
   }
   .section__linkbox {
     display: flex;
@@ -559,8 +571,130 @@ button {
     width: 67px;
     height: 67px;
   }
+  .section .item__line--img svg {
+    width: 67px;
+    height: 67px;
+  }
 
   .footer__logo {
     display: none;
+  }
+}
+@media (max-width: 536px) {
+  .header__inner {
+    padding: 40px 20px;
+  }
+
+  .section__inner {
+    padding: 0 20px;
+  }
+  .section__text {
+    font-size: 20px;
+  }
+  .section__steps {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .section__steps--item__text {
+    width: auto;
+    font-size: 20px;
+  }
+  .section__list--item__title {
+    font-size: 20px;
+  }
+  .section__list--item_subtitle {
+    font-size: 18px;
+  }
+  .section__list--line__step {
+    font-size: 22px;
+  }
+  .section__list--line__img {
+    width: 50px;
+    height: 50px;
+  }
+  .section__list--line__img svg {
+    width: 50px;
+    height: 50px;
+  }
+  .section .item__line--img {
+    width: 55px;
+    height: 55px;
+  }
+  .section .item__line--img svg {
+    width: 55px;
+    height: 55px;
+  }
+  .section .button {
+    font-size: 20px;
+  }
+
+  .footer__item {
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  .header .mob__logo {
+    height: 35px;
+  }
+  .header .mob__logo img {
+    height: 35px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+  .section .title {
+    font-size: 30px;
+  }
+  .section .subtitle {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .section .button {
+    font-size: 18px;
+    height: 60px;
+  }
+  .section__text {
+    padding: 25px 0;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .section__steps--item__text {
+    font-size: 16px;
+  }
+  .section__list--line__step {
+    font-size: 18px;
+  }
+  .section__list--line__step span {
+    font-size: 18px;
+  }
+  .section .item__line--link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .section .subtitle {
+    margin-bottom: 50px;
+  }
+  .section .button {
+    font-size: 16px;
+  }
+  .section__steps--item__first::before {
+    font-size: 120px;
+  }
+  .section__steps--item__second::before {
+    font-size: 120px;
+  }
+  .section__steps--item__text {
+    font-size: 16px;
+  }
+  .section__list--item {
+    margin-bottom: 30px;
+  }
+  .section__list--item::before {
+    display: none;
+  }
+  .section__list--item__subtitle {
+    font-size: 16px;
   }
 }

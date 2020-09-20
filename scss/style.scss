@@ -287,6 +287,10 @@ button {
                 display: block;
                 width: 74px;
                 height: 74px;
+                svg {
+                    width: 74px;
+                    height: 74px;
+                }
             }
             &__step {
                 margin-left: 37px;
@@ -317,6 +321,10 @@ button {
                     display: block;
                     width: 40px;
                     height: 40px;
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
                 &--link {
                     margin-left: 29px;
@@ -535,19 +543,22 @@ button {
 @media (max-width: 768px) {
     .section {
         .title {
-            font-size: 48px;
+            width: auto;
+            font-size: 40px;
             &--big {
                 margin: 0;
             }
         }
         .subtitle {
-            font-size: 26px;
+            font-size: 20px;
             line-height: 36px;
         }
         &__text {
+            width: auto;
             font-size: 24px;
             line-height: 36px;
             &--small {
+                width: auto;
                 font-size: 24px;
                 letter-spacing: 0.6px;
             }
@@ -574,23 +585,26 @@ button {
         }
         &__steps {
             width: 90%;
+            padding: 0 50px;
+            &--item {
+                &__text {
+                    width: 140px;
+                    font-size: 26px;
+                }
+            }
         }
         &__list {
             &--item {
                 &__title {
-                    font-size: 30px;
+                    font-size: 26px;
                 }
                 &__subtitle {
-                    font-size: 24px;
+                    font-size: 19px;
                 }
             }
             &--line {
                 &__step {
                     font-size: 24px;
-                }
-                &__img {
-                    width: 102px;
-                    height: 104px;
                 }
             }
         }
@@ -608,6 +622,10 @@ button {
                 &--img {
                     width: 67px;
                     height: 67px;
+                    svg {
+                        width: 67px;
+                        height: 67px;
+                    }
                 }
             }
         }
@@ -615,6 +633,168 @@ button {
     .footer {
         &__logo {
             display: none;
+        }
+    }
+}
+@media (max-width: 536px) {
+    .header {
+        &__inner {
+            padding: 40px 20px;
+        }
+    }
+    .section {
+        &__inner {
+            padding: 0 20px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__steps {
+            padding: 0 20px;
+            width: 100%;
+            &--item {
+                &__text {
+                    width: auto;
+                    font-size: 20px;
+                }
+            }
+        }
+        &__list {
+            &--item {
+                &__title {
+                    font-size: 20px;
+                }
+                &_subtitle {
+                    font-size: 18px;
+                }
+            }
+            &--line {
+                &__step {
+                    font-size: 22px;
+                }
+                &__img {
+                    width: 50px;
+                    height: 50px;
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        .item {
+            &__line {
+                &--img {
+                    width: 55px;
+                    height: 55px;
+                    svg {
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+        }
+        .button {
+            font-size: 20px;
+        }
+    }
+
+    .footer {
+        &__item {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 414px) {
+    .header {
+        .mob {
+            &__logo {
+                height: 35px;
+                img {
+                    height: 35px;
+                }
+            }
+        }
+    }
+    .section {
+        padding: 30px 0;
+        .title {
+            font-size: 30px;
+        }
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .button {
+            font-size: 18px;
+            height: 60px;
+        }
+        &__text {
+            padding: 25px 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        &__steps {
+            &--item {
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__list {
+            &--line {
+                &__step {
+                    font-size: 18px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .item {
+            &__line {
+                &--link {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .section {
+        .subtitle {
+            margin-bottom: 50px;
+        }
+        .button {
+            font-size: 16px;
+        }
+        &__steps {
+            &--item {
+                &__first {
+                    &::before {
+                        font-size: 120px;
+                    }
+                }
+                &__second {
+                    &::before {
+                        font-size: 120px;
+                    }
+                }
+                &__text {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__list {
+            &--item {
+                margin-bottom: 30px;
+                &::before {
+                    display: none;
+                }
+                &__subtitle {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
